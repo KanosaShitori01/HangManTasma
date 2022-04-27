@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.hangman {
+    padding: 3em 0;
+    /* background-color: red; */
+    height: 100vh;
+}
+.hangman .hangman_turn{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.hangman .hangman_turn img{
+    width: 50%;
+    height: 100%;
+    box-shadow: 0 0 10px black;
+}
+.hangman .hangman_suggets{
+    text-align: center;
+    font-size: 24px;
+}
+.hangman .hangman_text{
+    display: flex;
+    justify-content: space-between;
+}
+.hangman .hangman_text p{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-right: 1em;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.hangman .hangman_text p:last-child{
+    margin-right: 0;
+}
+.hangman .hangman_input{
+    margin-top: 2em;
+    width: 100%;
+    background-color: red;
+}
+.hangman .hangman_input input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(219, 255, 223);
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid rgb(5, 58, 11);
+}
